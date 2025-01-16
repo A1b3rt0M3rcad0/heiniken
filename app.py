@@ -3,6 +3,9 @@ from flask import render_template
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return redirect(url_for('validador_de_boleto'))
 
 @app.route('/validador-de-boleto')
 def validador_de_boleto():
