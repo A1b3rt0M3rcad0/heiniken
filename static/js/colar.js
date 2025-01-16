@@ -18,13 +18,15 @@ document.getElementById('colar').addEventListener('click', async () => {
 function validarBoleto(codigo) {
     // Remove todos os caracteres que não são dígitos
     const apenasDigitos = codigo.replace(/\D/g, '');
+    console.log(apenasDigitos)
     // Verifica se o código tem 47 dígitos
-    return apenasDigitos.length === 47;
+    return apenasDigitos.length == 47;
 }
 
 function formatarBoleto(codigo) {
     // Remove todos os caracteres que não são dígitos
     const apenasDigitos = codigo.replace(/\D/g, '');
+    console.log(apenasDigitos)
     // Aplica a máscara
     return `${apenasDigitos.slice(0, 5)}.${apenasDigitos.slice(5, 10)} ${apenasDigitos.slice(10, 15)}.${apenasDigitos.slice(15, 21)} ${apenasDigitos.slice(21, 26)}.${apenasDigitos.slice(26, 32)} ${apenasDigitos[32]} ${apenasDigitos.slice(33)}`;
 }
