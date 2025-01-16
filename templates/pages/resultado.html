@@ -1,0 +1,19 @@
+{% extends 'pages/partial.html' %}
+
+{% block content %}
+<div class="flex flex-col px-8 ml-32 max-lg:ml-4">
+    <p class="uppercase text-green-800 text-md max-lg:text-sm">mais segurança para você</p>
+    <h1 class="text-green-800 font-medium text-8xl max-lg:text-6xl">Validador de Boleto</h1>      
+</div>
+<div class="h-[670px] w-screen bg-estagiario my-8">
+    <div class="flex h-[690px] w-screen">
+        <div class="rounded-md flex flex-col justify-start items-start bg-white w-screen m-[50px] opacity-100 p-8 space-y-8">
+            <p class="text-4xl max-lg:text-2xl max-sm:text-lg text-green-800"><b>Boleto Válido</b></p>
+            <p class="text-6xl max-lg:text-3xl max-sm:text-xl text-green-700 indent-10"><b>Parabéns!</b> O código de barras informado corresponde a um boleto legítimo emitido pela Heineken.</p>
+            <p class="text-6xl max-lg:text-3xl max-sm:text-xl text-green-700 indent-10">Atenção! Para garantir sua segurança, acesse apenas canais oficiais para consultar suas faturas e boletos.</p>
+            <p class="text-6xl max-lg:text-3xl max-sm:text-xl text-green-700 self-center">Obrigado por confiar em nossos serviços! 😊</p>
+            <a class="self-center" href="{{ url_for('validador_de_boleto') }}"><input class="bg-green-800 hover:bg-green-700 self-center text-white p-6 max-sm:p-4 rounded text-md" type="submit" value="Nova Consulta"></a>
+        </div>
+    </div>
+</div>
+{% endblock %}
