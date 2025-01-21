@@ -554,6 +554,10 @@ video {
   display: none;
 }
 
+.collapse {
+  visibility: collapse;
+}
+
 .static {
   position: static;
 }
@@ -577,6 +581,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .h-16 {
@@ -633,6 +641,10 @@ video {
 
 .w-\[500px\] {
   width: 500px;
+}
+
+.border-collapse {
+  border-collapse: collapse;
 }
 
 .flex-row {
