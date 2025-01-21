@@ -9,4 +9,4 @@ class Boleto(Base):
 
     __tablename__ = 'boleto'
     id: Mapped[int] = mapped_column(primary_key=True)
-    codigo_boleto: Mapped[str] = mapped_column(String(100))
+    codigo_boleto: Mapped[str] = mapped_column(String(100), unique=True)
